@@ -34,8 +34,8 @@ cacheSolve <- function(x, ...) {
   ## set the boolean before starting to check the list
   bFound <- FALSE
   
-  ## get the current size of the list, add one for next position
-  lenCache <- length(get('inverseCache', envir=inverse.env)) + 1
+  ## get the current size of the list
+  lenCache <- length(get('inverseCache', envir=inverse.env)) 
   
   ## check the list of matrices to see if this matrix has already been calculated
   if (lenCache > 0)  {
